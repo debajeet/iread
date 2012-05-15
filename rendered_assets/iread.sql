@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 15, 2012 at 11:43 AM
+-- Generation Time: May 15, 2012 at 11:46 AM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -126,15 +126,7 @@ CREATE TABLE IF NOT EXISTS `groups` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `groups`
---
-
-INSERT INTO `groups` (`id`, `name`, `created`, `modified`) VALUES
-(1, 'Users', '2012-05-03 06:29:37', '2012-05-03 06:29:37'),
-(2, 'Book Shops', '2012-05-03 06:29:37', '2012-05-03 06:29:37');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -175,15 +167,7 @@ CREATE TABLE IF NOT EXISTS `userprofiles` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `userprofiles`
---
-
-INSERT INTO `userprofiles` (`id`, `user_id`, `firstname`, `middlename`, `lastname`, `shopname`, `lat`, `lon`, `email`, `address`, `city`, `state`, `pincode`, `created`, `modified`) VALUES
-(1, 1, 'Debajeet', '', 'Choudhury', '', '26.2006043', '92.9375739', 'debajeet.ch@gmail.com', 'H.No. 5, 1st Bylane Left\r\nAmbika Giri Nagar\r\nR.G. Baruah Road', 'Guwahati', 'Assam', '781024', '2012-05-03 15:54:11', '2012-05-03 15:54:11'),
-(2, 2, 'Mayur', '', 'Choudhury', 'Modern Book Depot', '26.2006043', '92.9375739', 'mayur@gmail.com', '5 Gopal Road\r\nPanbazar', 'Guwahati', 'Assam', '781024', '2012-05-03 18:10:33', '2012-05-03 18:10:33');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -199,15 +183,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `created`, `modified`) VALUES
-(1, 'debajeet', '3255c8349eeaad90012da6f3d5a1b6e76f34513b', 1, '2012-05-03 15:54:11', '2012-05-03 15:54:11'),
-(2, 'mayur', '3255c8349eeaad90012da6f3d5a1b6e76f34513b', 2, '2012-05-03 18:10:33', '2012-05-03 18:10:33');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
